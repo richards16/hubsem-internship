@@ -1,0 +1,147 @@
+* {
+    margin: 0%;
+    border: 0%;
+    /* outline: 1px solid black; */
+}
+
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+    background-image: url(../asstes/BG-signIn-yellowCar.png);
+    background-size: cover;
+}
+
+.login-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.login-container .login-image {
+    flex: 7;
+}
+
+.login-container .login-subject{
+    flex: 4;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.login-container .login-subject .logo-container{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.login-container .login-subject .logo-container img{
+    height: 5rem;
+}
+
+.form-conrtainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+form{
+    width: 85%;
+}
+
+.sign-in-title{
+    font-size: 1.8rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+.sign-in-caption{
+    margin-top: .5rem;
+    font-size: .9rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.sign-in-caption a{
+    color: #389dac;
+    text-decoration: none;
+}
+
+.input-box{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.input-box label{
+    font-size: .9rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.input-box .input-container{
+    display: flex;
+    height: 2rem;
+    border-radius: .3rem;    
+    outline: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+.input-box .input-container input{
+    all: unset;
+    flex-grow: 1;
+    padding-left: .5rem;
+}
+
+.input-box .input-container:has(input:focus){
+    outline: 1px solid rgb(0, 0, 0);
+}
+
+.input-box .input-container .button{
+    height: 100%;
+    width: auto;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box .input-container .button svg{
+    width: 50%;
+    height: 50%;
+    fill: black;
+}
+
+form .remember-pass{
+    color: black;
+    opacity: .6;
+}
+
+form .btn-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+form .btn-container button{
+    padding: 1rem 3rem;
+    background-color: #389dac;
+    border: none;
+    border-radius: 5rem;
+    color: white;
+    font-size: .95rem;
+}
+
+form .btn-container .forget,
+form .btn-container .terms{
+    margin-top: 1rem;
+    font-size: .8rem;
+
+}
+
+form .btn-container .forget a,
+form .btn-container .terms a{
+    color: #389dac;
+    text-decoration: none;
+}

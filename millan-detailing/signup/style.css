@@ -1,0 +1,178 @@
+*{
+    padding: 0%;
+    margin: 0px;
+    /* outline: 1px solid red; */
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(./images/BG-sign-up.png);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.main-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container .main-card{
+    background-color: white;
+    width: 40vw;
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
+
+.image-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img{
+    height: 4rem;
+}
+
+form{
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+}
+
+form label{
+    font-size: .8rem;
+    color: #252525;
+}
+
+form >input[type=text]{
+    all: unset;
+    border: 1px solid #60606081;
+    font-size: .8rem;
+    color: #252525;
+    height: 2rem;
+    padding: 0 .5rem;
+    border-radius: .2rem;
+}
+
+form >input:focus{
+    border: 1px solid #252525;
+    color: black;
+    transition: .5s;
+}
+
+form .password-wrapper{
+    border-radius: .2rem;
+    border: 1px solid #60606081;
+    display: flex;
+    height: 2rem;
+}
+
+form .password-wrapper input{
+    all: unset;
+    font-size: .8rem;
+    color: #252525;
+    padding: 0 .5rem;
+    flex-grow: 1;
+}
+
+form .password-wrapper:has(input:focus){
+    border: 1px solid #252525;
+    transition: .5s;
+}
+
+form .password-wrapper button{
+    height:100%;
+    aspect-ratio: 1;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .4rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+form .password-wrapper button svg{
+    fill: #606060ae;
+    height: 100%;
+    width: 100%;
+}
+
+form .btn-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form .btn-wrapper button{
+    padding: 1rem 3rem;
+    background-color: #02a0ac;
+    border-radius: 2rem;
+    border: none;
+    color: white;
+    margin-top: 1rem;
+}
+
+.hr{
+    width: 100%;
+    background-color: #252525;
+    height: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    opacity: .5;
+}
+
+.hr::after{
+    content: "OR";
+    font-size: .8rem;
+    background-color: white;
+    padding: .5rem;
+}
+
+.sign-in-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1.5rem;
+}
+
+.sign-in-container .sign-in{
+    background-color: #25252524;
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    font-size: .8rem;
+}
+
+.sign-in-container .sign-in a{
+    color: #02a0ac;
+    text-decoration: none;
+}
+
+.sign-in-container button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width:1000px) {
+    .main-container .main-card{
+        width: 80%;
+    }
+}
+
+@media (max-width:650px) {
+    .main-container .main-card{
+        width: 100%;
+    }
+}
